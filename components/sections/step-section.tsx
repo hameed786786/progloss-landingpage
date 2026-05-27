@@ -85,7 +85,7 @@ export default function StepsSection() {
                                 target: car,
                                 property: "rotation",
                                 rotationOffset: -90,
-                            },
+                            } as any,
                         },
                     }),
                 });
@@ -177,7 +177,7 @@ export default function StepsSection() {
                                 target: car,
                                 property: "rotation",
                                 rotationOffset: -100,
-                            },
+                            } as any,
                         },
                     }),
                 });
