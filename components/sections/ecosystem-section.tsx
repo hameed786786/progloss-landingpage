@@ -74,7 +74,7 @@ export default function EcosystemSection() {
                                     bg-gradient-to-bl from-[#0085C1] from-60% to-[#c4edff] to-100%
                                 "
                             >
-                                <div className="absolute left-[28px] top-[26px]">
+                                <div className="absolute left-[28px] top-[46px]">
 
                                     <h3
                                         className="
@@ -132,7 +132,7 @@ export default function EcosystemSection() {
                                         bg-[#F3F3F3]
                                     "
                                 >
-                                    <div className="absolute left-[26px] top-[30px]">
+                                    <div className="absolute left-[36px] top-[50px]">
 
                                         <h3
                                             className="
@@ -174,7 +174,7 @@ export default function EcosystemSection() {
                                         bg-[#F3F3F3]
                                     "
                                 >
-                                    <div className="absolute left-[26px] top-[30px]">
+                                    <div className="absolute left-[36px] top-[50px]">
 
                                         <h3
                                             className="
@@ -221,7 +221,7 @@ export default function EcosystemSection() {
                                     bg-[#F3F3F3]
                                 "
                             >
-                                <div className="absolute left-[26px] bottom-[28px]">
+                                <div className="absolute left-[36px] bottom-[38px]">
 
                                     <h3
                                         className="
@@ -264,7 +264,7 @@ export default function EcosystemSection() {
                                     bg-[#009BE3]
                                 "
                             >
-                                <div className="absolute left-[20px] top-[22px]">
+                                <div className="absolute left-[40px] top-[42px]">
 
                                     <h3
                                         className="
@@ -316,7 +316,7 @@ export default function EcosystemSection() {
                                     bg-[#F3F3F3]
                                 "
                             >
-                                <div className="absolute left-[26px] bottom-[28px]">
+                                <div className="absolute left-[36px] bottom-[38px]">
 
                                     <h3
                                         className="
@@ -362,7 +362,7 @@ export default function EcosystemSection() {
                                     bg-[#F3F3F3]
                                 "
                             >
-                                <div className="absolute left-[26px] bottom-[28px]">
+                                <div className="absolute left-[36px] bottom-[148px]">
 
                                     <h3
                                         className="
@@ -405,7 +405,7 @@ export default function EcosystemSection() {
                                     bg-[#CBEFFF]
                                 "
                             >
-                                <div className="absolute left-[26px] top-[26px]">
+                                <div className="absolute left-[36px] top-[36px]">
 
                                     <h3
                                         className="
