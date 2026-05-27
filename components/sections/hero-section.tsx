@@ -190,9 +190,9 @@ export default function HeroSection() {
               style={{
                 bottom: "12px",
                 display: "inline-block",
-                fontFamily: "var(--font-syne)",
-                fontWeight: 600,
-                fontSize: "95px",
+                fontFamily: "var(--font-lato), sans-serif",
+                fontWeight: 700,
+                fontSize: "75px",
                 fontStyle: "semibold",
                 lineHeight: "76px",
                 color: "#111111",
@@ -502,7 +502,7 @@ export default function HeroSection() {
               <div className="flex items-center gap-[8px]">
                 <span
                   style={{
-                    fontFamily: "var(--font-syne), sans-serif",
+                    fontFamily: "var(--font-lato), sans-serif",
                     fontWeight: 700,
                     fontSize: "24px",
                     lineHeight: "100%",
@@ -530,7 +530,7 @@ export default function HeroSection() {
               <div className="flex items-center gap-[8px]">
                 <span
                   style={{
-                    fontFamily: "var(--font-syne), sans-serif",
+                    fontFamily: "var(--font-lato), sans-serif",
                     fontWeight: 700,
                     fontSize: "24px",
                     lineHeight: "100%",
@@ -559,7 +559,7 @@ export default function HeroSection() {
             <div className="mt-[10px] ml-[-10px] gap-[8px]">
               <span
                 style={{
-                  fontFamily: "var(--font-syne), sans-serif",
+                  fontFamily: "var(--font-lato), sans-serif",
                   fontWeight: 700,
                   fontSize: "24px",
                   lineHeight: "100%",

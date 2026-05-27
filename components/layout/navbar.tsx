@@ -268,7 +268,7 @@ export default function Navbar() {
         </button>
 
         {/* SIDEBAR LINKS */}
-        <div className="absolute left-[28px] top-[110px]">
+        <div className="absolute left-[28px] top-[100px]">
 
           {navLinks.map((item) => (
             <Link

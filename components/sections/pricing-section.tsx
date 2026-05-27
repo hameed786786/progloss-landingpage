@@ -219,6 +219,7 @@ export default function PricingSection() {
                                     <h4
                                         className="
                                             text-[20px]
+                                            leading-none
                                         "
                                         style={{
                                             fontFamily: "var(--font-inter), sans-serif",
@@ -697,7 +698,7 @@ export default function PricingSection() {
                         className="
                             mt-[10px]
 
-                            w-[362px]
+                            w-full
                             
                             text-[24px]
                             leading-[1.2]
@@ -775,7 +776,7 @@ export default function PricingSection() {
                                         mt-[32px]
 
                                         h-[56.38095474243164px]
-                                        w-[317.14288330078125px]
+                                        w-[calc(100%-50px)]
                                         ml-[25px]
                                         rounded-full
 
@@ -819,7 +820,7 @@ export default function PricingSection() {
                                         Includes:
                                     </h4>
 
-                                    <div className="ml-[15px] mt-[8px] space-y-[9px] w-[297.7826232910156px] h-[241.2392578125px]">
+                                    <div className="ml-[15px] mt-[8px] space-y-[9px] w-full pr-[15px] h-[241.2392578125px]">
 
                                         {[
                                             "6 washes + 2 interior",
@@ -840,7 +841,7 @@ export default function PricingSection() {
                                                     alt="Tick"
                                                     width={10}
                                                     height={10}
-                                                    className="w-[17.619049072265625px] h-[12.333333015441895px] opacity-[0.5] invert"
+                                                    className="w-[17.619049072265625px] h-[12.333333015441895px] opacity-[0.5] invert shrink-0"
                                                 />
 
                                                 <span
@@ -928,10 +929,10 @@ export default function PricingSection() {
                                 <button
                                     className="
                                         mt-[32px]
-                                        ml-[25px]
-                                        h-[55.161903381347656px]
-                                        w-[310.28570556640625px]
 
+                                        h-[55.161903381347656px]
+                                        w-[calc(100%-50px)]
+                                        ml-[25px]
                                         rounded-full
 
                                         border
@@ -977,7 +978,7 @@ export default function PricingSection() {
                                         Includes:
                                     </h4>
 
-                                    <div className="ml-[15px] mt-[8px] space-y-[9px] w-[297.7826232910156px] h-[241.2392578125px]">
+                                    <div className="ml-[15px] mt-[8px] space-y-[9px] w-full pr-[15px] h-[241.2392578125px]">
 
                                         {[
                                             "4 exterior washes / month",
@@ -997,7 +998,7 @@ export default function PricingSection() {
                                                     alt="Tick"
                                                     width={10}
                                                     height={10}
-                                                    className="w-[17.619049072265625px] h-[12.333333015441895px] opacity-[0.5] invert"
+                                                    className="w-[17.619049072265625px] h-[12.333333015441895px] opacity-[0.5] invert shrink-0"
                                                 />
 
                                                 <span
@@ -1085,10 +1086,10 @@ export default function PricingSection() {
                                 <button
                                     className="
                                         mt-[32px]
-                                        ml-[25px]
-                                        h-[55.161903381347656px]
-                                        w-[310.28570556640625px]
 
+                                        h-[55.161903381347656px]
+                                        w-[calc(100%-50px)]
+                                        ml-[25px]
                                         rounded-full
 
                                         border
@@ -1134,7 +1135,7 @@ export default function PricingSection() {
                                         Includes:
                                     </h4>
 
-                                    <div className="ml-[15px] mt-[8px] space-y-[9px] w-[297.7826232910156px] h-[241.2392578125px]">
+                                    <div className="ml-[15px] mt-[8px] space-y-[9px] w-full pr-[15px] h-[241.2392578125px]">
 
                                         {[
                                             "8 washes + 1 detail",
@@ -1154,7 +1155,7 @@ export default function PricingSection() {
                                                     alt="Tick"
                                                     width={10}
                                                     height={10}
-                                                    className="w-[17.619049072265625px] h-[12.333333015441895px] opacity-[0.5] invert"
+                                                    className="w-[17.619049072265625px] h-[12.333333015441895px] opacity-[0.5] invert shrink-0"
                                                 />
 
                                                 <span

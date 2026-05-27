@@ -499,7 +499,6 @@ export default function EcosystemSection() {
 
                             text-[22px]
                             leading-[1.15]
-                            tracking-[-0.03em]
 
                             text-black
                         "
@@ -885,7 +884,7 @@ export default function EcosystemSection() {
                                 h-[344px]
 
                                 overflow-hidden
-                                rounded-[20px]
+                                rounded-[40px]
 
                                 bg-[#CBEFFF]
                             "
