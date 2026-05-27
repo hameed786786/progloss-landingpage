@@ -1,299 +1,1182 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 
-export default function FooterSection() {
-    const footerData = [
-        {
-            title: "About Progloss",
-            links: ["Company Overview", "Careers", "Press & Media", "Testimonials"]
-        },
-        {
-            title: "Resources",
-            links: ["Blog", "Help Center", "Webinars & Events", "Case Studies"]
-        },
-        {
-            title: "Support & Contact",
-            links: ["Contact Us", "Technical Support", "Feedback", "Community Forum"]
-        }
-    ];
-
-    const socialLinks = [
-        { name: "Instagram", icon: "/icons/instagram.svg" },
-        { name: "Facebook", icon: "/icons/facebook.svg" },
-        { name: "Twitter / X", icon: "/icons/twitter.svg" },
-        { name: "Linkedin", icon: "/icons/linkedin.svg" },
-    ];
+export default function PricingSection() {
 
     return (
-        <footer className="w-full bg-white relative overflow flex flex-col pt-[30px]">
-            
+        <>
             {/* ---------------- DESKTOP ---------------- */}
-            <div className="hidden md:flex flex-col px-[60px] lg:px-[110px] pb-[40px] z-10 max-w-[1600px] mx-auto w-full relative">
-                
-                {/* LOGO & TOP LINE */}
-                <div className="flex items-center gap-[30px] w-full">
-                    <Image 
-                        src="/icons/logo.svg" 
-                        alt="Progloss Logo" 
-                        width={120} 
-                        height={40} 
-                        className="w-[76px] h-[55px] object-contain shrink-0" 
-                    />
-                    <div className="flex-1 h-[1px] bg-[#F0F0F0]" />
-                </div>
 
-                {/* MAIN GRID */}
-                <div className="mt-[60px] flex justify-between items-start  pr-[100px]">
-                    
-                    {/* COLUMN 1: Brand Info */}
-                    <div className="w-[241px] shrink-0">
-                        <p 
-                            className="text-[16px] leading-[1.4] text-[#6F6F6F]"
-                            style={{ fontFamily: "var(--font-lato)", fontWeight: 500 }}
-                        >
-                            Luxury eco-smart car care, on<br />
-                            subscription. Built for Dubai<br />
-                            apartments, villas, gated<br />
-                            communities and office parking.
-                        </p>
-                    </div>
+            <section className="hidden md:block w-full bg-white overflow-hidden">
 
-                    {/* COLUMNS 2, 3, 4: Links */}
-                    {footerData.map((col, idx) => (
-                        <div key={idx} className="flex flex-col gap-[20px]">
-                            <h4 
-                                className="text-[16px] text-[#333333]" 
-                                style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 700 }}
-                            >
-                                {col.title}
-                            </h4>
-                            <ul className="flex flex-col gap-[14px]">
-                                {col.links.map((link, lIdx) => (
-                                    <li key={lIdx}>
-                                        <Link 
-                                            href="#" 
-                                            className="text-[16px] text-[#6F6F6F] hover:text-black transition-colors"
-                                            style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 500 }}
-                                        >
-                                            {link}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
+                <div className="px-[56px] pt-[60px] pb-[120px]">
 
-                    {/* COLUMN 5: Socials */}
-                    <div className="flex flex-col gap-[20px]">
-                        <h4 
-                            className="text-[16px] text-[#333333]" 
-                            style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 700 }}
-                        >
-                            Connect
-                        </h4>
-                        <ul className="flex flex-col gap-[14px]">
-                            {socialLinks.map((social, sIdx) => (
-                                <li key={sIdx}>
-                                    <Link 
-                                        href="#" 
-                                        className="flex items-center gap-[10px] text-[16px] text-[#6F6F6F] hover:text-black transition-colors"
-                                        style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 500 }}
-                                    >
-                                        <div className="flex items-center justify-center w-[16px] h-[16px]">
-                                            <Image 
-                                                src={social.icon} 
-                                                alt={social.name} 
-                                                width={16} 
-                                                height={16} 
-                                                className="w-full h-full object-contain brightness-0"
-                                            />
-                                        </div>
-                                        {social.name}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </div>
+                    {/* TAG */}
+                    <div
+                        className="
+                            ml-[50px]
+                            h-[43px]
+                            w-[178px]
 
-                {/* BOTTOM BAR */}
-                <div className="mt-[100px] w-full border-t-2 border-[#F0F0F0] pt-[24px] flex justify-between items-center">
-                    <p 
-                        className="text-[13px] text-[#888888]"
-                        style={{ fontFamily: "var(--font-lato)", fontWeight: 500 }}
+                            rounded-full
+                            border
+                            border-black
+
+                            px-[20px]
+                        "
                     >
-                        ©2026 PROGLOSS · All rights reserved.
-                    </p>
-                    <div className="flex gap-[32px]">
-                        {["Term of use", "Privacy policy", "Security"].map((item, idx) => (
-                            <Link 
-                                key={idx} 
-                                href="#" 
-                                className="text-[13px] text-[#555555] hover:text-black transition-colors"
-                                style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 500 }}
-                            >
-                                {item}
-                            </Link>
-                        ))}
+                        <span
+                            className="
+                                relative
+                                top-[7px]
+
+                                text-[16px]
+                                leading-none
+
+                                text-black
+                            "
+                            style={{
+                                fontFamily: "var(--font-lato), sans-serif",
+                                fontWeight: 500,
+                            }}
+                        >
+                            Subscription plans
+                        </span>
+                    </div>
+
+                    {/* TITLE */}
+                    <h2
+                        className="
+                            mt-[24px]
+                            ml-[50px]
+
+                            text-[56px]
+                            leading-[1.04]
+
+                            text-black
+                        "
+                        style={{
+                            fontFamily: "var(--font-syne), sans-serif",
+                            fontWeight: 700,
+                        }}
+                    >
+                        One subscription. A lifetime of shine.
+                    </h2>
+
+                    {/* CARDS */}
+                    <div
+                        className="
+                            mt-[112px]
+
+                            flex
+                            items-center
+                            justify-center
+
+                            gap-[10px]
+                        "
+                    >
+
+                        {/* ---------------- SAPPHIRE ---------------- */}
+
+                        <div
+                            className="
+                                relative
+
+                                rounded-[22px]
+
+                                transition-all
+                                duration-500
+
+                                hover:-translate-y-[8px]
+                                hover:shadow-[0px_10px_30px_rgba(0,0,0,0.08)]
+
+                                text-black
+                            "
+                            style={{
+                                width: "420px",
+                                height: "562px",
+                                marginTop: "24px",
+                                borderRadius: "22px",
+
+                                background: `
+                                    linear-gradient(#EAEBEB, #EAEBEB) padding-box,
+                                    linear-gradient(
+                                        180deg,
+                                        #3FAEFF 0%,
+                                        rgba(63, 174, 255, 0.45) 18%,
+                                        rgba(63, 174, 255, 0.12) 48%,
+                                        rgba(63, 174, 255, 0.06) 72%,
+                                        #3FAEFF 100%
+                                    ) border-box
+                                `,
+
+                                border: "1px solid transparent",
+
+                                boxShadow:
+                                    "0px 4px 18px rgba(0,0,0,0.04)",
+                            }}
+                        >
+
+                            <div className="px-[28px] pt-[30px]">
+
+                                <h3
+                                    className="
+                                        text-[32px]
+                                        leading-none
+                                    "
+                                    style={{
+                                        fontFamily: "inter, sans-serif",
+                                        fontWeight: 500,
+                                    }}
+                                >
+                                    Sapphire
+                                </h3>
+
+                                <div className="mt-[18px]">
+
+                                    <span
+                                        className="
+                                            text-[44px]
+                                            leading-none
+                                            tracking-[-0.04em]
+                                        "
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        $199
+                                    </span>
+
+                                    <span
+                                        className="
+                                            ml-[4px]
+                                            text-[26px]
+                                            opacity-[0.6]
+                                        "
+                                        style={{
+                                            fontFamily: "var(--font-lato), sans-serif",
+                                            fontWeight: 500,
+                                        }}
+                                    >
+                                        /month
+                                    </span>
+                                </div>
+
+                                <button
+                                    className="
+                                        mt-[22px]
+
+                                        h-[64px]
+                                        w-[360px]
+
+                                        rounded-full
+
+                                        border
+                                        border-[#33AFFF]
+
+                                        bg-white
+
+                                        flex
+                                        items-center
+                                        justify-center
+                                        gap-[14px]
+
+                                        transition-all
+                                        duration-300
+
+                                        hover:scale-[1.02]
+                                    "
+                                >
+
+                                    <span
+                                        className="
+                                            text-[20px]
+                                            leading-none
+                                            text-black
+                                        "
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 600,
+                                        }}
+                                    >
+                                        Get started
+                                    </span>
+
+                                    <Image
+                                        src="/icons/arrow-left.svg"
+                                        alt="Arrow"
+                                        width={24}
+                                        height={24}
+                                        className="w-[24px] h-[24px]"
+                                    />
+
+                                </button>
+
+                                <div className="mt-[24px]">
+
+                                    <h4
+                                        className="
+                                            text-[20px]
+                                        "
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        Includes:
+                                    </h4>
+
+                                    <div className="mt-[22px] space-y-[25px]">
+
+                                        {[
+                                            "4 exterior washes / month",
+                                            "Waterless eco wash",
+                                            "Live tracking",
+                                            "1 vehicle",
+                                            "Apartment-safe",
+                                        ].map((feature) => (
+
+                                            <div
+                                                key={feature}
+                                                className="flex items-center gap-[12px]"
+                                            >
+
+                                                <Image
+                                                    src="/icons/tick.svg"
+                                                    alt="Tick"
+                                                    width={20}
+                                                    height={20}
+                                                    className="opacity-[0.4]"
+                                                />
+
+                                                <span
+                                                    className="
+                                                        text-[20px]
+                                                        leading-[1.3]
+                                                    "
+                                                    style={{
+                                                        fontFamily: "var(--font-inter), sans-serif",
+                                                        fontWeight: 500,
+                                                        opacity: 0.4,
+                                                    }}
+                                                >
+                                                    {feature}
+                                                </span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* ---------------- EMERALD ---------------- */}
+
+                        <div
+                            className="
+                                relative
+                                rounded-[22px]
+
+                                transition-all
+                                duration-500
+
+                                hover:-translate-y-[8px]
+                                hover:shadow-[0px_10px_30px_rgba(0,0,0,0.08)]
+
+                                text-white
+                            "
+                            style={{
+                                width: "420px",
+                                height: "618px",
+                                marginTop: "-56px",
+                                borderRadius: "22px",
+                                border: "1px solid transparent",
+                                background: `
+                                    radial-gradient(120% 120% at 20% 10%, #1A3E61 0%, #000000 60%) padding-box,
+                                    linear-gradient(0deg, #1C1C1C, #1C1C1C) border-box,
+                                    radial-gradient(28.97% 32.98% at 63.3% 100%, #159AD5 0%, rgba(47, 63, 161, 0) 100%) border-box,
+                                    radial-gradient(62.96% 84.68% at 4.65% 2.1%, #2A58FF 0%, rgba(42, 88, 255, 0) 41.09%) border-box
+                                `,
+                            }}
+                        >
+
+                            <div className="px-[28px] pt-[30px]">
+
+                                <h3
+                                    className="
+                                        text-[32px]
+                                        leading-none
+                                    "
+                                    style={{
+                                        fontFamily: "inter, sans-serif",
+                                        fontWeight: 500,
+                                    }}
+                                >
+                                    Emerald
+                                </h3>
+
+                                <div className="mt-[18px]">
+
+                                    <span
+                                        className="
+                                            text-[44px]
+                                            leading-none
+                                            tracking-[-0.04em]
+                                        "
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        $319
+                                    </span>
+
+                                    <span
+                                        className="
+                                            ml-[4px]
+                                            text-[26px]
+                                            opacity-[0.6]
+                                        "
+                                        style={{
+                                            fontFamily: "var(--font-lato), sans-serif",
+                                            fontWeight: 500,
+                                        }}
+                                    >
+                                        /month
+                                    </span>
+                                </div>
+
+                                <button
+                                    className="
+                                        mt-[22px]
+
+                                        h-[64px]
+                                        w-[360px]
+
+                                        rounded-full
+
+                                        border
+                                        border-white
+
+                                        bg-white
+                                        text-black
+
+                                        flex
+                                        items-center
+                                        justify-center
+                                        gap-[14px]
+
+                                        transition-all
+                                        duration-300
+
+                                        hover:scale-[1.02]
+                                    "
+                                >
+
+                                    <span
+                                        className="
+                                            text-[20px]
+                                            leading-none
+                                            text-black
+                                        "
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 600,
+                                        }}
+                                    >
+                                        Get started
+                                    </span>
+
+                                    <Image
+                                        src="/icons/arrow-left.svg"
+                                        alt="Arrow"
+                                        width={24}
+                                        height={24}
+                                        className="w-[24px] h-[24px]"
+                                    />
+                                </button>
+
+                                <div className="mt-[24px]">
+
+                                    <h4
+                                        className="
+                                            text-[20px]
+                                            leading-none
+                                        "
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        Includes:
+                                    </h4>
+
+                                    <div className="mt-[22px] space-y-[25px]">
+
+                                        {[
+                                            "6 washes + 2 interior",
+                                            "Tire & rim care",
+                                            "Priority dispatch",
+                                            "Up to 2 vehicles",
+                                            "Free fragrance refresh",
+                                            "Detailed usage reports",
+                                        ].map((feature) => (
+
+                                            <div
+                                                key={feature}
+                                                className="flex items-center gap-[12px]"
+                                            >
+
+                                                <Image
+                                                    src="/icons/tick.svg"
+                                                    alt="Tick"
+                                                    width={20}
+                                                    height={20}
+                                                    className="opacity-[0.5] invert"
+                                                />
+
+                                                <span
+                                                    className="
+                                                        text-[20px]
+                                                        leading-[1.3]
+                                                    "
+                                                    style={{
+                                                        fontFamily: "var(--font-inter), sans-serif",
+                                                        fontWeight: 500,
+                                                        opacity: 0.5,
+                                                    }}
+                                                >
+                                                    {feature}
+                                                </span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* ---------------- DIAMOND ---------------- */}
+
+                        <div
+                            className="
+                                relative
+
+                                rounded-[22px]
+
+                                transition-all
+                                duration-500
+
+                                hover:-translate-y-[8px]
+                                hover:shadow-[0px_10px_30px_rgba(0,0,0,0.08)]
+
+                                text-black
+                            "
+                            style={{
+                                width: "420px",
+                                height: "562px",
+                                marginTop: "24px",
+                                borderRadius: "22px",
+
+                                background: `
+                                    linear-gradient(#EAEBEB, #EAEBEB) padding-box,
+                                    linear-gradient(
+                                        180deg,
+                                        #3FAEFF 0%,
+                                        rgba(63, 174, 255, 0.45) 18%,
+                                        rgba(63, 174, 255, 0.12) 48%,
+                                        rgba(63, 174, 255, 0.06) 72%,
+                                        #3FAEFF 100%
+                                    ) border-box
+                                `,
+
+                                border: "1px solid transparent",
+
+                                boxShadow:
+                                    "0px 4px 18px rgba(0,0,0,0.04)",
+                            }}
+                        >
+
+                            <div className="px-[28px] pt-[30px]">
+
+                                <h3
+                                    className="
+                                        text-[32px]
+                                        leading-none
+                                    "
+                                    style={{
+                                        fontFamily: "inter, sans-serif",
+                                        fontWeight: 500,
+                                    }}
+                                >
+                                    Diamond
+                                </h3>
+
+                                <div className="mt-[18px]">
+
+                                    <span
+                                        className="
+                                            text-[44px]
+                                            leading-none
+                                            tracking-[-0.04em]
+                                        "
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        $449
+                                    </span>
+
+                                    <span
+                                        className="
+                                            ml-[4px]
+                                            text-[26px]
+                                            opacity-[0.6]
+                                        "
+                                        style={{
+                                            fontFamily: "var(--font-lato), sans-serif",
+                                            fontWeight: 500,
+                                        }}
+                                    >
+                                        /month
+                                    </span>
+                                </div>
+
+                                <button
+                                    className="
+                                        mt-[22px]
+
+                                        h-[64px]
+                                        w-[360px]
+
+                                        rounded-full
+
+                                        border
+                                        border-[#33AFFF]
+
+                                        bg-white
+
+                                        flex
+                                        items-center
+                                        justify-center
+                                        gap-[14px]
+
+                                        transition-all
+                                        duration-300
+
+                                        hover:scale-[1.02]
+                                    "
+                                >
+
+                                    <span
+                                        className="
+                                            text-[20px]
+                                            leading-none
+                                            text-black
+                                        "
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 600,
+                                        }}
+                                    >
+                                        Get started
+                                    </span>
+
+                                    <Image
+                                        src="/icons/arrow-left.svg"
+                                        alt="Arrow"
+                                        width={24}
+                                        height={24}
+                                        className="w-[24px] h-[24px]"
+                                    />
+                                </button>
+
+                                <div className="mt-[24px]">
+
+                                    <h4
+                                        className="
+                                            text-[20px]
+                                            leading-none
+                                        "
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        Includes:
+                                    </h4>
+
+                                    <div className="mt-[22px] space-y-[25px]">
+
+                                        {[
+                                            "8 washes + 1 detail",
+                                            "Ceramic touch-ups",
+                                            "Concierge manager",
+                                            "Unlimited vehicles",
+                                            "Quarterly clay bar",
+                                        ].map((feature) => (
+
+                                            <div
+                                                key={feature}
+                                                className="flex items-center gap-[12px]"
+                                            >
+
+                                                <Image
+                                                    src="/icons/tick.svg"
+                                                    alt="Tick"
+                                                    width={20}
+                                                    height={20}
+                                                    className="opacity-[0.4]"
+                                                />
+
+                                                <span
+                                                    className="
+                                                        text-[20px]
+                                                        leading-[1.3]
+                                                    "
+                                                    style={{
+                                                        fontFamily: "var(--font-inter), sans-serif",
+                                                        fontWeight: 500,
+                                                        opacity: 0.4,
+                                                    }}
+                                                >
+                                                    {feature}
+                                                </span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
+            </section>
 
             {/* ---------------- MOBILE ---------------- */}
-            <div className="flex md:hidden flex-col px-[24px] pb-[40px] z-10 relative">
-                
-                {/* LOGO & TOP LINE */}
-                <div className="flex items-center gap-[20px] w-full">
-                    <Image 
-                        src="/icons/logo.svg" 
-                        alt="Progloss Logo" 
-                        width={76} 
-                        height={55} 
-                        className="w-[76px] h-[55px] object-contain shrink-0" 
-                    />
-                    <div className="flex-1 h-[2px] bg-[#EAEAEA]" />
-                </div>
 
-                {/* BRAND INFO */}
-                <div className="mt-[32px] w-full">
-                    <p 
-                        className="text-[16px] leading-[1.6] text-[#00000099]"
-                        style={{ fontFamily: "var(--font-lato)", fontWeight: 500 }}
+            <section className="block md:hidden w-full bg-white overflow-hidden">
+
+                <div className="px-[18px] pt-[2px] pb-[60px]">
+
+                    {/* TAG */}
+                    <div
+                        className="
+                            h-[26px]
+                            w-[121px]
+
+                            rounded-full
+                            border-[1px]
+                            border-black
+
+                            px-[9px]
+                            
+                        "
                     >
-                        Luxury eco-smart car care, on subscription. Built for Dubai apartments, villas, gated communities and office parking.
-                    </p>
-                </div>
+                        <span
+                            className="
+                                relative
+                                
+                                text-[12px]
+                                leading-none
 
-                {/* LINKS ACCORDION / STACK */}
-                <div className="mt-[40px] flex flex-col gap-[32px]">
-                    {footerData.map((col, idx) => (
-                        <div key={idx} className="flex flex-col gap-[16px]">
-                            <h4 
-                                className="text-[16px] text-[#1A1A1A]" 
-                                style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 700 }}
-                            >
-                                {col.title}
-                            </h4>
-                            <ul className="flex flex-col gap-[12px]">
-                                {col.links.map((link, lIdx) => (
-                                    <li key={lIdx}>
-                                        <Link 
-                                            href="#" 
-                                            className="text-[16px] text-[#555555] hover:text-black transition-colors"
-                                            style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 500 }}
-                                        >
-                                            {link}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
-
-                    {/* SOCIALS */}
-                    <div className="flex flex-col gap-[16px]">
-                        <h4 
-                            className="text-[16px] text-[#1A1A1A]" 
-                            style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 700 }}
+                                text-black
+                            "
+                            style={{
+                                fontFamily: "var(--font-lato), sans-serif",
+                                fontWeight: 600,
+                            }}
                         >
-                            Connect
-                        </h4>
-                        <ul className="flex flex-col gap-[12px]">
-                            {socialLinks.map((social, sIdx) => (
-                                <li key={sIdx}>
-                                    <Link 
-                                        href="#" 
-                                        className="flex items-center gap-[10px] text-[16px] text-[#555555] hover:text-black transition-colors"
-                                        style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 500 }}
-                                    >
-                                        <div className="flex items-center justify-center w-[16px] h-[16px]">
-                                            <Image 
-                                                src={social.icon} 
-                                                alt={social.name} 
-                                                width={16} 
-                                                height={16} 
-                                                className="w-full h-full object-contain brightness-0"
-                                            />
-                                        </div>
-                                        {social.name}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
+                            Subscription plans
+                        </span>
                     </div>
-                </div>
 
-                {/* BOTTOM BAR */}
-                <div className="mt-[60px] w-full flex flex-col items-center gap-[24px]">
-                    <p 
-                        className="text-[14px] text-[#626981] text-center"
-                        style={{ fontFamily: "var(--font-lato)", fontWeight: 500 }}
+                    {/* TITLE */}
+                    <h2
+                        className="
+                            mt-[10px]
+
+                            w-[362px]
+                            
+                            text-[24px]
+                            leading-[1.2]
+
+                            text-black
+                        "
+                        style={{
+                            fontFamily: "var(--font-syne), sans-serif",
+                            fontWeight: 700,
+                        }}
                     >
-                        ©2026 PROGLOSS · All rights reserved.
-                    </p>
-                    <div className="flex gap-[20px] justify-center flex-wrap">
-                        {["Term of use", "Privacy policy", "Security"].map((item, idx) => (
-                            <Link 
-                                key={idx} 
-                                href="#" 
-                                className="text-[14px] text-[#4B5162] hover:text-black transition-colors"
-                                style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 500 }}
-                            >
-                                {item}
-                            </Link>
-                        ))}
+                        One subscription. A lifetime of shine.
+                    </h2>
+
+                    {/* MOBILE CARDS */}
+                    <div className="mt-[18px] flex flex-col gap-[8px]">
+
+                        {/* EMERALD */}
+                        <div
+                            className="
+                                relative
+                                overflow-hidden
+                                text-white
+                            "
+                            style={{
+                                width: "100%",
+                                height: "544.4285888671875px",
+                                borderRadius: "21.14px",
+                                background: `
+                                    radial-gradient(120% 120% at 20% 10%, #1A3E61 0%, #000000 60%) padding-box,
+                                    linear-gradient(0deg, #1C1C1C, #1C1C1C) border-box,
+                                    radial-gradient(28.97% 32.98% at 63.3% 100%, #159AD5 0%, rgba(47, 63, 161, 0) 100%) border-box,
+                                    radial-gradient(62.96% 84.68% at 4.65% 2.1%, #2A58FF 0%, rgba(42, 88, 255, 0) 41.09%) border-box
+                                `,
+                            }}
+                        >
+
+                            <div className="px-[12px] pt-[22px]">
+
+                                <h3
+                                    className="pl-[10px] text-[28.19px] h-[34px] w-[110px]"
+                                    style={{
+                                        fontFamily: "var(--font-inter), sans-serif",
+                                        fontWeight: 500,
+                                    }}
+                                >
+                                    Emerald
+                                </h3>
+
+                                <div className="pl-[10px] mt-[4px] flex items-end">
+
+                                    <span
+                                        className="text-[38.76px] leading-none"
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        $319
+                                    </span>
+
+                                    <span
+                                        className="ml-[2px] mb-[2px] text-[22.9px] opacity-[0.8] pt-[25px]"
+                                        style={{
+                                            fontFamily: "var(--font-lato), sans-serif",
+                                            fontWeight: 500,
+                                        }}
+                                    >
+                                        /month
+                                    </span>
+                                </div>
+
+                                <button
+                                    className="
+                                        mt-[32px]
+
+                                        h-[56.38095474243164px]
+                                        w-[317.14288330078125px]
+                                        ml-[25px]
+                                        rounded-full
+
+                                        bg-white
+
+                                        flex
+                                        items-center
+                                        justify-center
+                                        gap-[8px]
+                                    "
+                                >
+
+                                    <span
+                                        className="text-[17.62px] text-black"
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 600,
+                                        }}
+                                    >
+                                        Get started
+                                    </span>
+
+                                    <Image
+                                        src="/icons/arrow-left.svg"
+                                        alt="Arrow"
+                                        width={14}
+                                        height={14}
+                                        className="w-[28.19047737121582px] h-[28.19047737121582px]"
+                                    />
+                                </button>
+
+                                <div className="mt-[12px]">
+
+                                    <h4
+                                        className="text-[17.62px] pl-[15px]"
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 400,
+                                        }}
+                                    >
+                                        Includes:
+                                    </h4>
+
+                                    <div className="ml-[15px] mt-[8px] space-y-[9px] w-[297.7826232910156px] h-[241.2392578125px]">
+
+                                        {[
+                                            "6 washes + 2 interior",
+                                            "Tire & rim care",
+                                            "Priority dispatch",
+                                            "Up to 2 vehicles",
+                                            "Free fragrance refresh",
+                                            "Detailed usage reports",
+                                        ].map((feature) => (
+
+                                            <div
+                                                key={feature}
+                                                className="flex items-center gap-[6px]"
+                                            >
+
+                                                <Image
+                                                    src="/icons/tick.svg"
+                                                    alt="Tick"
+                                                    width={10}
+                                                    height={10}
+                                                    className="w-[17.619049072265625px] h-[12.333333015441895px] opacity-[0.5] invert"
+                                                />
+
+                                                <span
+                                                    className="text-[17.62px] leading-[2]"
+                                                    style={{
+                                                        fontFamily: "var(--font-inter), sans-serif",
+                                                        fontWeight: 500,
+                                                        opacity: 0.5,
+                                                    }}
+                                                >
+                                                    {feature}
+                                                </span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* SAPPHIRE */}
+                        <div
+                            className="
+                                relative
+                                overflow-hidden
+                                rounded-[14px]
+                                
+                                text-black
+                            "
+                            style={{
+                                width: "100%",
+                                height: "484.3904724121094px",
+                                borderRadius: "20.69px",
+
+                                background: `
+                                    linear-gradient(#EAEBEB, #EAEBEB) padding-box,
+                                    linear-gradient(
+                                        180deg,
+                                        #3FAEFF 0%,
+                                        rgba(63, 174, 255, 0.45) 18%,
+                                        rgba(63, 174, 255, 0.12) 48%,
+                                        rgba(63, 174, 255, 0.06) 72%,
+                                        #3FAEFF 100%
+                                    ) border-box
+                                `,
+
+                                border: "1px solid transparent",
+                            }}
+                        >
+
+                            <div className="px-[12px] pt-[22px]">
+
+                                <h3
+                                    className="text-[27.58px] pl-[10px]"
+                                    style={{
+                                        fontFamily: "var(--font-inter), sans-serif",
+                                        fontWeight: 500,
+                                    }}
+                                >
+                                    Sapphire
+                                </h3>
+
+                                <div className="mt-[12px] flex items-end">
+
+                                    <span
+                                        className="text-[37.92px] leading-none pl-[10px]"
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        $199
+                                    </span>
+
+                                    <span
+                                        className="ml-[2px] mb-[2px] text-[22.41px] opacity-[0.8]"
+                                        style={{
+                                            fontFamily: "var(--font-lato), sans-serif",
+                                            fontWeight: 500,
+                                        }}
+                                    >
+                                        /month
+                                    </span>
+                                </div>
+
+                                <button
+                                    className="
+                                        mt-[32px]
+                                        ml-[25px]
+                                        h-[55.161903381347656px]
+                                        w-[310.28570556640625px]
+
+                                        rounded-full
+
+                                        border
+                                        border-[#33AFFF]
+
+                                        bg-white
+
+                                        flex
+                                        items-center
+                                        justify-center
+                                        gap-[8px]
+                                    "
+                                >
+
+                                    <span
+                                        className="text-[17.62px] text-black"
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 600,
+                                        }}
+                                    >
+                                        Get started
+                                    </span>
+
+                                    <Image
+                                        src="/icons/arrow-left.svg"
+                                        alt="Arrow"
+                                        width={14}
+                                        height={14}
+                                        className="w-[28.19047737121582px] h-[28.19047737121582px]"
+                                    />
+                                </button>
+
+                                <div className="mt-[12px]">
+
+                                    <h4
+                                        className="text-[17.62px] pl-[15px]"
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 400,
+                                        }}
+                                    >
+                                        Includes:
+                                    </h4>
+
+                                    <div className="ml-[15px] mt-[8px] space-y-[9px] w-[297.7826232910156px] h-[241.2392578125px]">
+
+                                        {[
+                                            "4 exterior washes / month",
+                                            "Waterless eco wash",
+                                            "Live tracking",
+                                            "1 vehicle",
+                                            "Apartment-safe",
+                                        ].map((feature) => (
+
+                                            <div
+                                                key={feature}
+                                                className="flex items-center gap-[6px]"
+                                            >
+
+                                                <Image
+                                                    src="/icons/tick.svg"
+                                                    alt="Tick"
+                                                    width={10}
+                                                    height={10}
+                                                    className="w-[17.619049072265625px] h-[12.333333015441895px] opacity-[0.5] invert"
+                                                />
+
+                                                <span
+                                                    className="text-[17.62px] leading-[2]"
+                                                    style={{
+                                                        fontFamily: "var(--font-inter), sans-serif",
+                                                        fontWeight: 500,
+                                                        opacity: 0.5,
+                                                    }}
+                                                >
+                                                    {feature}
+                                                </span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* DIAMOND */}
+                        <div
+                            className="
+                                relative
+                                overflow-hidden
+                                rounded-[14px]
+                                
+                                text-black
+                            "
+                            style={{
+                                width: "100%",
+                                height: "484.3904724121094px",
+                                borderRadius: "20.69px",
+
+                                background: `
+                                    linear-gradient(#EAEBEB, #EAEBEB) padding-box,
+                                    linear-gradient(
+                                        180deg,
+                                        #3FAEFF 0%,
+                                        rgba(63, 174, 255, 0.45) 18%,
+                                        rgba(63, 174, 255, 0.12) 48%,
+                                        rgba(63, 174, 255, 0.06) 72%,
+                                        #3FAEFF 100%
+                                    ) border-box
+                                `,
+
+                                border: "1px solid transparent",
+                            }}
+                        >
+
+                            <div className="px-[12px] pt-[22px]">
+
+                                <h3
+                                    className="text-[27.58px] pl-[10px]"
+                                    style={{
+                                        fontFamily: "var(--font-inter), sans-serif",
+                                        fontWeight: 500,
+                                    }}
+                                >
+                                    Diamond
+                                </h3>
+
+                                <div className="mt-[12px] flex items-end">
+
+                                    <span
+                                        className="text-[37.92px] leading-none pl-[10px]"
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        $449
+                                    </span>
+
+                                    <span
+                                        className="ml-[2px] mb-[2px] text-[22.41px] opacity-[0.8]"
+                                        style={{
+                                            fontFamily: "var(--font-lato), sans-serif",
+                                            fontWeight: 500,
+                                        }}
+                                    >
+                                        /month
+                                    </span>
+                                </div>
+
+                                <button
+                                    className="
+                                        mt-[32px]
+                                        ml-[25px]
+                                        h-[55.161903381347656px]
+                                        w-[310.28570556640625px]
+
+                                        rounded-full
+
+                                        border
+                                        border-[#33AFFF]
+
+                                        bg-white
+
+                                        flex
+                                        items-center
+                                        justify-center
+                                        gap-[8px]
+                                    "
+                                >
+
+                                    <span
+                                        className="text-[17.62px] text-black"
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 600,
+                                        }}
+                                    >
+                                        Get started
+                                    </span>
+
+                                    <Image
+                                        src="/icons/arrow-left.svg"
+                                        alt="Arrow"
+                                        width={14}
+                                        height={14}
+                                        className="w-[28.19047737121582px] h-[28.19047737121582px]"
+                                    />
+                                </button>
+
+                                <div className="mt-[12px]">
+
+                                    <h4
+                                        className="text-[17.62px] pl-[15px]"
+                                        style={{
+                                            fontFamily: "var(--font-inter), sans-serif",
+                                            fontWeight: 400,
+                                        }}
+                                    >
+                                        Includes:
+                                    </h4>
+
+                                    <div className="ml-[15px] mt-[8px] space-y-[9px] w-[297.7826232910156px] h-[241.2392578125px]">
+
+                                        {[
+                                            "8 washes + 1 detail",
+                                            "Ceramic touch-ups",
+                                            "Concierge manager",
+                                            "Unlimited vehicles",
+                                            "Quarterly clay bar",
+                                        ].map((feature) => (
+
+                                            <div
+                                                key={feature}
+                                                className="flex items-center gap-[6px]"
+                                            >
+
+                                                <Image
+                                                    src="/icons/tick.svg"
+                                                    alt="Tick"
+                                                    width={10}
+                                                    height={10}
+                                                    className="w-[17.619049072265625px] h-[12.333333015441895px] opacity-[0.5] invert"
+                                                />
+
+                                                <span
+                                                    className="text-[17.62px] leading-[2]"
+                                                    style={{
+                                                        fontFamily: "var(--font-inter), sans-serif",
+                                                        fontWeight: 500,
+                                                        opacity: 0.5,
+                                                    }}
+                                                >
+                                                    {feature}
+                                                </span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-
-            {/* ---------------- WATERMARK (DESKTOP) ---------------- */}
-            <div 
-                className="
-                    hidden 
-                    md:flex
-                    absolute 
-                    bottom-[-24%] 
-                    left-0 
-                    w-full 
-                    justify-center 
-                    pointer-events-none 
-                    overflow-hidden
-                    select-none 
-                    z-0
-                "
-            >
-                <img
-                    src="/icons/PROGLOSS.svg"
-                    alt="PROGLOSS Watermark"
-                    className="w-[90%] h-auto object-contain max-w-full"
-                />
-            </div>
-
-            {/* ---------------- WATERMARK (MOBILE) ---------------- */}
-            <div 
-                className="
-                    flex 
-                    md:hidden
-                    absolute 
-                    bottom-[-2%] 
-                    left-0 
-                    w-full 
-                    justify-center 
-                    pointer-events-none 
-                    overflow-hidden
-                    select-none 
-                    z-0
-                "
-            >
-                <img
-                    src="/icons/PROGLOSS.svg"
-                    alt="PROGLOSS Watermark"
-                    className="w-[180%] h-auto object-contain max-w-none"
-                />
-            </div>
-            
-        </footer>
+            </section>
+        </>
     );
 }
