@@ -276,7 +276,7 @@ export default function StepsSection() {
                                 </h3>
 
                                 <p
-                                    className="mt-[18px] text-[16px] leading-[1.5] text-[#7A7A7A]"
+                                    className="mt-[28px] text-[16px] leading-[1.5] text-[#7A7A7A]"
                                     style={{
                                         fontFamily: "var(--font-lato), sans-serif",
                                         fontWeight: 500,
@@ -305,7 +305,7 @@ export default function StepsSection() {
                                 </h3>
 
                                 <p
-                                    className="mt-[18px] text-[16px] leading-[1.5] text-[#7A7A7A]"
+                                    className="mt-[28px] text-[16px] leading-[1.5] text-[#7A7A7A]"
                                     style={{
                                         fontFamily: "var(--font-lato), sans-serif",
                                         fontWeight: 500,
@@ -334,7 +334,7 @@ export default function StepsSection() {
                                 </h3>
 
                                 <p
-                                    className="mt-[18px] text-[16px] leading-[1.5] text-[#7A7A7A]"
+                                    className="mt-[28px] text-[16px] leading-[1.5] text-[#7A7A7A]"
                                     style={{
                                         fontFamily: "var(--font-lato), sans-serif",
                                         fontWeight: 500,
@@ -363,7 +363,7 @@ export default function StepsSection() {
                                 </h3>
 
                                 <p
-                                    className="mt-[18px] text-[16px] leading-[1.5] text-[#7A7A7A]"
+                                    className="mt-[28px] text-[16px] leading-[1.5] text-[#7A7A7A]"
                                     style={{
                                         fontFamily: "var(--font-lato), sans-serif",
                                         fontWeight: 500,

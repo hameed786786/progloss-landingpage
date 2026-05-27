@@ -491,8 +491,8 @@ export default function TransformationSection() {
 
                         mt-[52px]
 
-                        w-[362px]
-                        h-[163.1919403076172px]
+                        w-[382px]
+                        h-[263.1919403076172px]
 
                         rounded-[24px]
 
@@ -578,9 +578,8 @@ export default function TransformationSection() {
                         className="
                             absolute
                             inset-0
-
                             flex
-                            items-center
+                            items-end
                             justify-center
                         "
                     >
@@ -590,8 +589,8 @@ export default function TransformationSection() {
                             width={430}
                             height={220}
                             className="
-                                w-[303.3724670410156px]
-                                h-[126.6784896850586px]
+                                w-[403.3724670410156px]
+                                h-[256.6784896850586px]
                                 object-contain
                                 pointer-events-none
                             "

@@ -78,7 +78,7 @@ export default function EcosystemSection() {
 
                                     <h3
                                         className="
-                                            text-[32px]
+                                            text-[28px]
                                             leading-none
                                             text-white
                                         "
