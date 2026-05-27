@@ -244,8 +244,7 @@ export default function AppSection() {
                     <h2
                         className="
                             mt-[22px]
-                            w-[362px]
-                            h-[58px]
+                            w-full
                             text-[24px]
                             leading-[1.04]
                             tracking-[-0.05em]
@@ -264,7 +263,7 @@ export default function AppSection() {
                         className="
                             relative
                             mt-[42px]
-                            w-[376.3704833984375px]
+                            w-full
                             h-[483px]
                             rounded-[30px]
                             overflow-hidden
